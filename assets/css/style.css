@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Prevent scrolling */
+  position: relative;
+}
+
+
+
+.Header-Design {
+  width: 100%;
+  background-color: #6f5e4f;
+  display: flex;
+  justify-content: center; /* Center the content */
+  padding: 0.2rem 0; /* Add some padding */
+
+}
+
+.navigation {
+  display: flex;
+  justify-content: center; /* Center the navigation items */
+  align-items: center;
+  gap: 1rem; /* Add space between navigation items */
+}
+
+.navigation .nav-button {
+  font-weight: 700;
+  font-size: 30px;
+  color: #e3bbbd;
+  font-family: "Concert One", sans-serif;
+  transition: transform 0.5s, color 0.3s;
+  text-decoration: none; /* Remove underline */
+}
+
+.navigation .nav-button:hover {
+  transform: translateY(-10px);
+}
+
+.home-logo img {
+  width: 65px; /* Adjust this value as needed */
+  height: auto;
+  transition: transform 0.3s ease-in;
+}
+
+.home-logo:hover {
+  transform: scale(1.8);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 100px); /* Adjust height to account for header */
+  width: 100vw;
+  padding: clamp(0, 1vw, 5vw);
+  background: #f7efda;
+}
+
+.pink {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.heart-background {
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.5s ease;
+}
+
+.content {
+  width: 60%; /* Adjusted for better fit */
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.subtitle {
+  font-family: "Bebas Neue";
+  font-size: 20px; /* Change this value to the desired font size */
+  font-weight: 100;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1rem;
+  color: #97976a;
+}
+
+.title {
+  font-family: "Margarine", sans-serif;
+  font-size: 70px; /* Change this value to the desired font size */
+  margin-bottom: 2rem;
+  color: #df949d;
+}
+
+.description {
+  font-family: "Bebas Neue";
+  font-size: 23px;
+  letter-spacing: 0.05rem; 
+  font-weight: 100;
+  font-style: normal;
+  margin-bottom: 3rem;
+  color: #97976a;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+  width: fit-content;
+}
+
+nav:hover > :not(:hover) {
+  opacity: 0.6;
+}
+
+nav a {
+  border-radius: 25px;
+  padding: 0.7rem 1.5rem;
+  text-decoration: none; /* Remove underline */
+  color: #6f5e4f;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  font-family: "Concert One", sans-serif;
+}
+
+nav a:hover {
+  transform: translate(-0.3rem, -0.3rem);
+  color: #e3bbbd;
+}
+
+.hero1,
+.hero2,
+.hero3,
+.hero4 {
+  background: 	#df949d;
+}
