@@ -2,147 +2,123 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #ffffff;
 }
 
 html, body {
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   display: flex;
   flex-direction: column;
-  overflow: hidden; /* Prevent scrolling */
   position: relative;
+  overflow: hidden;
+  text-align: center;
+  background: url('./assets/img/BARBIE BACKGROUND.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
 
-
-
-.Header-Design {
+.header {
   width: 100%;
-  background-color: #6f5e4f;
+  background-color: rgba(255, 255, 255, 0.8);
   display: flex;
-  justify-content: center; /* Center the content */
-  padding: 0.2rem 0; /* Add some padding */
-
+  justify-content: center;
+  padding: 0.5rem 0;
+  z-index: 1;
 }
 
-.navigation {
+.nav {
   display: flex;
-  justify-content: center; /* Center the navigation items */
+  justify-content: center;
   align-items: center;
-  gap: 1rem; /* Add space between navigation items */
+  gap: 1rem;
 }
 
-.navigation .nav-button {
-  font-weight: 700;
-  font-size: 30px;
-  color: #e3bbbd;
-  font-family: "Concert One", sans-serif;
+.nav-link {
+  font-size: 2rem;
+  color: #E0218A;
+  font-family: "Anton Sc";
   transition: transform 0.5s, color 0.3s;
-  text-decoration: none; /* Remove underline */
+  text-decoration: none;
+  margin-right: 20px; /* Adjust the space between navigation items */
 }
 
-.navigation .nav-button:hover {
+.nav-link:last-child {
+  margin-right: 0; /* Remove margin for the last item to avoid extra spacing at the end */
+}
+
+.nav-link:hover,
+.nav-link:focus {
   transform: translateY(-10px);
 }
 
 .home-logo img {
-  width: 65px; /* Adjust this value as needed */
+  width: 5rem;
   height: auto;
   transition: transform 0.3s ease-in;
 }
 
-.home-logo:hover {
-  transform: scale(1.8);
+.home-logo:hover img {
+  transform: scale(1.3);
 }
 
 .container {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: calc(100vh - 100px); /* Adjust height to account for header */
+  height: calc(100vh - 100px);
   width: 100vw;
-  padding: clamp(0, 1vw, 5vw);
-  background: #f7efda;
-}
-
-.pink {
-  width: 40%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.heart-background {
-  width: 100%;
-  object-fit: cover;
-  transition: all 0.5s ease;
+  padding: 1rem;
 }
 
 .content {
-  width: 60%; /* Adjusted for better fit */
+  width: 60%;
   padding: 2rem;
   display: flex;
   flex-direction: column;
+  border-radius: 15px;
+  z-index: 1; /* Ensure the content is above the background */
 }
 
 .subtitle {
-  font-family: "Bebas Neue";
-  font-size: 20px; /* Change this value to the desired font size */
-  font-weight: 100;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.25rem;
   letter-spacing: 0.2rem;
   margin-bottom: 1rem;
-  color: #97976a;
+  color: white;
+  background-color: rgba(224, 33, 138, 0.5);
+  padding: 10px; /* Add some padding */
 }
 
 .title {
-  font-family: "Margarine", sans-serif;
-  font-size: 70px; /* Change this value to the desired font size */
+  font-family: "Anton Sc";
+  font-weight: 600;
+  font-size: 4.375rem;
   margin-bottom: 2rem;
-  color: #df949d;
+  letter-spacing: 0.2rem;
+  color: white;
+  background-color: rgba(224, 33, 138, 0.5);
+  padding: 10px; /* Add some padding */
 }
 
 .description {
-  font-family: "Bebas Neue";
-  font-size: 23px;
-  letter-spacing: 0.05rem; 
-  font-weight: 100;
-  font-style: normal;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.4375rem;
+  letter-spacing: 0.05rem;
   margin-bottom: 3rem;
-  color: #97976a;
+  color: #ffffff;
+  background-color: rgba(224, 33, 138, 0.5);
+  padding: 10px; /* Add some padding */
 }
 
-nav {
-  display: flex;
-  gap: 1rem;
-  width: fit-content;
-}
-
-nav:hover > :not(:hover) {
-  opacity: 0.6;
-}
-
-nav a {
-  border-radius: 25px;
-  padding: 0.7rem 1.5rem;
-  text-decoration: none; /* Remove underline */
-  color: #6f5e4f;
-  font-weight: 700;
-  transition: all 0.3s ease;
-  font-family: "Concert One", sans-serif;
-}
-
-nav a:hover {
-  transform: translate(-0.3rem, -0.3rem);
-  color: #e3bbbd;
-}
-
-.hero1,
-.hero2,
-.hero3,
-.hero4 {
-  background: 	#df949d;
+.background-image {
+  position: fixed; /* Or 'absolute' if you prefer it to scroll with the page */
+  top: 0;
+  left: 0;
+  width: 100vw; /* 100% of the viewport width */
+  height: 100vh; /* 100% of the viewport height */
+  object-fit: cover; /* Cover the container without losing aspect ratio */
+  z-index: -1; /* Stay behind other content */
 }

@@ -1,0 +1,272 @@
+@keyframes glow2 {
+  0% {
+    text-shadow: 0 0 15px #E0218A;
+  }
+  50% {
+    text-shadow: 0 0 40px #E0218A; /* Increase the blur radius for a larger glow */
+  }
+  100% {
+    text-shadow: 0 0 15px #E0218A;
+  }
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 15px #ffffff;
+  }
+  50% {
+    text-shadow: 0 0 40px #ffffff; /* Increase the blur radius for a larger glow */
+  }
+  100% {
+    text-shadow: 0 0 15px #ffffff;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(720deg);
+  }
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    text-align: right;
+  }
+  
+  .header {
+    width: 100%;
+    background-color: rgba(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 0;
+    position: relative;
+    z-index: 1000;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .nav-link {
+    font-size: 2rem;
+    color: #E0218A;
+    font-family: "Anton Sc";
+    transition: transform 0.5s, color 0.3s;
+    text-decoration: none;
+    margin-right: 20px; /* Adjust the space between navigation items */
+  }
+  
+  .nav-link:last-child {
+    margin-right: 0; /* Remove margin for the last item to avoid extra spacing at the end */
+  }
+  
+  .nav-link:hover,
+  .nav-link:focus {
+    transform: translateY(-10px);
+  }
+  
+  .home-logo img {
+    width: 5rem;
+    height: auto;
+    transition: transform 0.3s ease-in;
+  }
+  
+  .home-logo:hover img {
+    transform: scale(1.3);
+  }
+
+  .hero1, .hero2 {
+    z-index: 20; /* Ensure they are above the .Margot-Robbie element */
+    position: relative; /* Required for z-index to take effect */
+  }
+  
+  .container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 100%;
+    width: 100vw;
+    padding: 1rem;
+  }
+
+  .right-side-container {
+    position: fixed; /* Use fixed or absolute depending on your layout */
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(247, 140, 183); /* White with transparency */
+    z-index: 0; /* Ensure it's above other content */
+  }
+  
+  .content {
+    width: 60%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    z-index: 1; /* Ensure the content is above the background */
+  }
+
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Align text to the right */
+    justify-content: center; /* Center text vertically */
+    height: 100%; /* Adjust the height as needed */
+    margin-right: 40px;
+    z-index: 1;
+  }
+
+
+  .title {
+    font-family: "Anton Sc";
+    font-weight: 600;
+    font-size: 90px;
+    letter-spacing: 0.2rem;
+    color: #E0218A;
+    padding: 2px; /* Add some padding */
+    animation: glow 1.5s infinite ease-in-out;
+    margin-bottom: -20px;
+    transition: transform 0.3s ease-in;
+  }
+
+  .title:hover {
+    transform: translateY(-10px);
+  }
+
+  .subtitle {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 40px;
+    letter-spacing: 0.05rem;
+    color: #ffffff;
+    padding: 2px; /* Add some padding */
+    margin-bottom: 30px;
+    animation: glow2 1.5s infinite ease-in-out;
+    transition: transform 0.3s ease-in;
+  }
+
+  .subtitle:hover {
+    transform: translateY(-10px);
+  }
+
+  .description {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 30px;    
+    letter-spacing: 0.05rem;
+    margin-bottom: 3rem;
+    color: #ffffff;
+    padding: 2px; /* Add some padding */
+    animation: glow2 1.5s infinite ease-in-out;
+    transition: transform 0.3s ease-in;
+  }
+
+  .description:hover {
+    transform: translateY(-10px);
+  }
+
+.background-image {
+    position: fixed; /* Or 'absolute' if you prefer it to scroll with the page */
+    top: 0;
+    left: 0;
+    width: 100vw; /* 100% of the viewport width */
+    height: 100vh; /* 100% of the viewport height */
+    object-fit: cover; /* Cover the container without losing aspect ratio */
+    z-index: -1; /* Stay behind other content */
+}
+
+.barbie-container {
+  position: absolute;
+  width: 100%; /* Adjust based on your layout */
+  height: auto;
+  background-position: center;
+  z-index: 0; /* Ensure it's behind the text */
+}
+
+
+.Margot-Robbie {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  top: 200px;
+  left: 70px;
+  width: 650px;
+  height: auto;
+  z-index: 0;
+  transition: transform 0.3s ease-in;
+  box-shadow: 0 0 8px 5px rgba(255, 255, 255, 0.5); /* Adjust color/size as needed */
+}
+
+.Margot-Robbie:hover {
+  box-shadow: 0 0 8px 5px rgba(255, 255, 255, 2); /* Adjust color/size as needed */
+  transform: scale(1.05);
+}
+
+
+.image-container {
+  position: absolute;
+  width: 30px; /* Initial width */
+  height: 30px; /* Initial height */
+  transition: width 0.2s ease, height 0.2s ease;
+  overflow: hidden;
+  cursor: pointer; /* Cursor style */
+  z-index: 10; /* Ensure image containers are above background */
+
+}
+
+.image-container img {
+  width: 100%; /* Image fills its container */
+  height: 100%; /* Image fills its container */
+  object-fit: cover; /* Maintain aspect ratio */
+  transition: transform 0.3s ease; /* Smooth transition for the hover effect */
+  z-index: 10;
+}
+
+.img1 {
+  top: 220px; /* Adjust position */
+  left: 50px; /* Adjust position */
+}
+
+.img2 {
+  top: 220px; /* Adjust position */
+  right: 50px; /* Adjust position */
+}
+
+.img3 {
+  bottom: 220px; /* Adjust position */
+  left: 50px; /* Adjust position */
+}
+
+.img4 {
+  bottom: 220px; /* Adjust position */
+  right: 50px; /* Adjust position */
+}
+
+.Margot-Robbie:hover .image-container {
+  width: 80px; /* Expanded width on hover */
+  height: 80px; /* Expanded height on hover */
+  animation: spin 0.4s ease-in-out forwards;
+}
