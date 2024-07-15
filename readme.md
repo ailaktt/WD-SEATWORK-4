@@ -18,7 +18,8 @@
 
 <!-- TODO: Make a short description -->
 <div align="center">
-  Welcome to my project "Seatwork 4: Hero Website" by Kyla Deirdre C. Tan
+  Welcome to my project Seatwork 4: Hero - Barbie Theme website
+  by Kyla Deirdre C. Tan
 
 </div>
 
@@ -64,8 +65,9 @@
 <!-- TODO: To be changed -->
 <!-- The following are just sample -->
   For this project we were tasked to a create Hero Website. The main theme that I incorporated my website
-with is Barbie Movie 2023It Includes a Home/Landing Page and 4 Hero pages with each showcasing my favorite Barbie
-character from the movie. Each pages of the website is designed to be visually appealing while using different CSS
+with is Barbie Movie 2023. This theme was chosen because it is one of my personal favorite movies. The website
+includesa Home/Landing Page and 4 Hero pages with each showcasing my favorite Barbie character from the movie.
+Each pages of the website is designed to be visually appealing while using different CSS
 animations and different kinds of layout. 
 
 ### Key Components
