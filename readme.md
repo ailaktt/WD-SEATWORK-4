@@ -6,7 +6,7 @@
 <div align="center">
   <a href="https://github.com/">
   <!-- TODO: If you want to add logo or banner you can add it here -->
-    <img src="./assets/img/Barbie Logo.png" alt="Barbie" width="150" height="200">
+    <img src="./assets/img/Barbie Logo.png" alt="Barbie" width="150" height="100">
   </a>
 <!-- TODO: Change Title to the name of the title of your Project -->
   <h3 align="center">Seatwork 4: Hero Website</h3>
