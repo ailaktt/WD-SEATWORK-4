@@ -6,19 +6,19 @@
 <div align="center">
   <a href="https://github.com/">
   <!-- TODO: If you want to add logo or banner you can add it here -->
-    <img src="./assets/img/CAT THEME/Kyla Logo.png" alt="Kyla" width="150" height="150">
+    <img src="./assets/img/Barbie Logo.png" alt="Barbie" width="150" height="150">
   </a>
 <!-- TODO: Change Title to the name of the title of your Project -->
-  <h3 align="center">Seatwork 3: Headers and Footers Display Website</h3>
+  <h3 align="center">Seatwork 4: Hero Website</h3>
 </div>
 <!-- Banner added here -->
 <div align="center">
-  <img src="./assets/img/CAT THEME/Pink Heart.jpg" alt="Banner Image" width="100%">
+  <img src="./assets/img/BARBIE BACKGROUND.jpg" alt="Banner Image" width="100%">
 </div>
 
 <!-- TODO: Make a short description -->
 <div align="center">
-  Welcome to my project "SW 3: Headers and Footers Display Website" by Kyla Deirdre C. Tan
+  Welcome to my project "Seatwork 4: Hero Website" by Kyla Deirdre C. Tan
 
 </div>
 
@@ -26,7 +26,7 @@
 
 <!-- TODO: Change the zyx-0314 into your github username  -->
 <!-- TODO: Change the WD-Template-Project into the same name of your folder -->
-![](https://visit-counter.vercel.app/counter.png?page=ailaktt/WD-Seatwork-3)
+![](https://visit-counter.vercel.app/counter.png?page=ailaktt/WD-SEATWORK-4)
 
 ---
 
@@ -63,18 +63,20 @@
 
 <!-- TODO: To be changed -->
 <!-- The following are just sample -->
-  For this project we were tasked to design static and animated headers & footers.
-The theme that I chose is for the header is aligned to cats then for the footer it was
-random designs. The purpose of this project is for the students to explore the different kinds
-of design in CSS by applying it to headers and footers. One of the main things that i've learned
-is the use of Nested Specific, Nested Specific Class, Non-Nested Non-Specific Class, Nested Non-Specific Class, and lastly, Design with animation. The proect is made in Visual Studio Code with HTML and CSS languages.
+  For this project we were tasked to a create Hero Website. The main theme that I incorporated my website
+with is Barbie Movie 2023It Includes a Home/Landing Page and 4 Hero pages with each showcasing my favorite Barbie
+character from the movie. Each pages of the website is designed to be visually appealing while using different CSS
+animations and different kinds of layout. 
 
 ### Key Components
 <!-- TODO: List of Key Components -->
 <!-- The following are just sample -->
 - MultiPage Website
-- Header Components
-- Footer Components
+- Landing Page
+- Page 1: Barbie
+- Page 2: Ken
+- Page 3: Weird Barbie
+- Page 4: Mermaid Barbie
 
 ### Technology
 <!-- TODO: List of Technology Used -->
@@ -121,6 +123,5 @@ WD-ProjectName
 <!-- TODO: Add References -->
 | Title | Purpose | Link |
 |-|-|-|
-| BOOTSTRAP ICONS | Used for icons in the nav bar and social media icons | https://icons.getbootstrap.com/ |
 | GOOGLE FONTS | Used the font Bebas Nueue for the design of the texts | https://fonts.google.com/specimen/Bebas+Neue?query=bebas |
-| UI SNIPPETS | Made as reference for some of the animations | https://ui-snippets.dev/ |
+| GOOGLE FONTS | Used the font Anton SC for the design of the texts | https://fonts.google.com/specimen/Anton+SC?query=anton |
